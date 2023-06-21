@@ -21,6 +21,7 @@
 	width: 80px;
 	height: 112px;
 	animation: pipe-animation 1.5s infinite linear;
+	display: none;
 }
 
 @keyframes pipe-animation {
@@ -38,12 +39,12 @@
 	width: 150px;
 }
 
-.mario-start {
+/* .mario-start {
 	position: absolute;
 	bottom: 0;
 	width: 150px;
 }
-
+ */
 .jump {
 	animation: jump 500ms infinite ease-out;
 }

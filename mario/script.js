@@ -34,5 +34,6 @@ const loop = setInterval(() => {
 document.addEventListener('keydown', jump);
 
 newGame.onclick = function(){
-	//codigo
+	mario.src = 'image/mario.gif';
+	pipe.style.display = "block";
 };
