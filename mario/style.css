@@ -87,9 +87,17 @@
 }
 
 .new-game {
-	width: 30%;
+	width: 20%;
 	margin: auto;
 	margin-top: 25%;
 	display: block;
+	cursor: pointer;
+}
+
+.restart {
+	width: 20%;
+	margin: auto;
+	margin-top: 25%;
+	display: none;
 	cursor: pointer;
 }

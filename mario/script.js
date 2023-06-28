@@ -2,6 +2,7 @@ const mario 	 = document.querySelector('.mario');
 const pipe 		 = document.querySelector('.pipe');
 const marioStart = document.querySelector('.mario-start');
 const newGame	 = document.querySelector('.new-game');
+const restart	 = document.querySelector('.restart');
 
 const jump = () => {
 	mario.classList.add('jump');
@@ -25,7 +26,9 @@ const loop = setInterval(() => {
 		mario.src = 'image/game-over.png';
 		mario.style.width = '75px';
 		mario.style.marginLeft = '50px';
+		restart.style.display = "block";
 
+		
 		clearInterval(loop);
 	}
 
@@ -34,6 +37,7 @@ const loop = setInterval(() => {
 document.addEventListener('keydown', jump);
 
 newGame.onclick = function(){
-	mario.src = 'image/mario.gif';
-	pipe.style.display = "block";
+	mario.src 				= 'image/mario.gif';
+	pipe.style.display 		= "block";
+	newGame.style.display 	= "none";
 };
